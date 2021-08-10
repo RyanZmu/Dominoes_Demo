@@ -1,0 +1,36 @@
+body {
+    background-color: cornflowerblue;
+   
+}
+
+h1 {
+    color:whitesmoke
+}
+
+#DominoList li {
+    list-style-type: none;
+    transition: transform 0.5s;
+}
+
+#DominoList li:hover {
+    color:grey;
+    transition: color 1s;
+    cursor:pointer;
+    transform:scale(1.2);
+}
+
+#DominoList {
+    display:flex;
+    flex-flow: row wrap;
+    font-size: 6rem;
+}
+
+#DominoList .selected {
+    color: white;
+    filter: drop-shadow(0 0 0.25rem white);
+}
+
+.hidden {
+    display:none; /* completely removes from doc flow! */ 
+    visibility: hidden; /*Keep the eleement in the doc flow but make it invisible  */
+}
